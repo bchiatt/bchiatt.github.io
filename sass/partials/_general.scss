@@ -36,7 +36,7 @@
 		> a {
 			@include transition-property(all);
 			@include transition-duration(0.1s);
-			@include transition-timing-function(ease-out); 
+			@include transition-timing-function(ease-out);
 
 			padding-left: 3px;
 			padding-right: 3px;
@@ -72,14 +72,14 @@
 					border-bottom-color: #fff;
 				}
 			}
-			
+
 			&.active {
 				> a {
 					border-bottom-color: #fff;
 				}
-			}	
+			}
 		}
-	}	
+	}
 }
 
 .navbar {
@@ -112,13 +112,13 @@
 						border-bottom-color: $heading-text-color;
 					}
 				}
-				
+
 				&.active {
 					> a {
 						border-bottom-color: $heading-text-color;
 					}
 				}
-			} 
+			}
 		}
 	}
 }
@@ -163,7 +163,7 @@
 
 .btn-info {
 	background-color: $secondary-accent-color;
-	border-color: $secondary-accent-color;	
+	border-color: $secondary-accent-color;
 
 	&:hover, &:focus, &:active, &.active {
 		background-color: $secondary-accent-color;
@@ -280,7 +280,7 @@ a {
 	&.bottom .tooltip-arrow,
 	&.bottom-left .tooltip-arrow,
 	&.bottom-right .tooltip-arrow {
-		@include opacity(0.5);	
+		@include opacity(0.5);
 	}
 }
 
@@ -321,7 +321,7 @@ body {
 		text-shadow: none;
 		color: $body-text-color;
 	}
-	
+
 	#jpreOverlay {
 		background-color: #fafafa;
 	}
@@ -333,7 +333,7 @@ body {
 		background-color: $body-text-color;
 	}
 
-	
+
 }
 
 .parsley-error-list {
@@ -344,4 +344,3 @@ body {
 		color: #d2322d;
 	}
 }
-

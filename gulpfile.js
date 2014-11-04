@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp      = require('gulp');
 var gutil     = require('gulp-util');
 var bower     = require('bower');
@@ -11,23 +13,22 @@ var jshint    = require('gulp-jshint');
 var jscs      = require('gulp-jscs');
 
 var paths = {
-  //sass: ['./scss/**/*.scss'],
-  //jade: ['./jade/**/*.jade'],
+  //sass: ['./sass/main.scss'],
   jade: ['./jade/index.jade'],
   code: ['./public/js/**/*.js']
 };
 
-gulp.task('default', [/*'sass',*/ 'jade', 'lint', 'jscs', 'watch']);
+gulp.task('default', [/*'sass', */'jade', 'lint', 'jscs', 'watch']);
 
 /*gulp.task('sass', function(done) {
-  gulp.src('./scss/style.scss')
+  gulp.src(paths.sass)
     .pipe(sass())
-    .pipe(gulp.dest('./public/css/'))
+    .pipe(gulp.dest('./assets/css/'))
     .pipe(minifyCss({
       keepSpecialComments: 0
     }))
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('./public/css/'))
+    .pipe(gulp.dest('./assets/css/'))
     .on('end', done);
 });*/
 

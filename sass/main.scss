@@ -1,24 +1,23 @@
 // MAIN
 
 // all modules, general styles and variables
-@import "partials/base";
-@import "partials/general";
+@import "partials/_base.scss";
+@import "partials/_general.scss";
 
 // third-party
-@import "vendors/supersized";
-@import "vendors/font-awesome.min";
-@import "vendors/brankic-icon";
-@import "vendors/animate";
-@import "vendors/looper";
-@import "vendors/jpreloader";
-@import "vendors/magnific-popup";
+@import "vendors/_supersized.scss";
+@import "vendors/_font-awesome.min.scss";
+@import "vendors/_brankic-icon.scss";
+@import "vendors/_animate.scss";
+@import "vendors/_looper.scss";
+@import "vendors/_jpreloader.scss";
+@import "vendors/_magnific-popup.scss";
 
 // web elements/components
-@import "partials/hero-unit";
-@import "partials/about";
-@import "partials/services";
-@import "partials/works";
-@import "partials/contact";
-@import "partials/twitter-stream";
-@import "partials/footer";
-
+@import "partials/_hero-unit.scss";
+@import "partials/_about.scss";
+@import "partials/_services.scss";
+@import "partials/_works.scss";
+@import "partials/_contact.scss";
+@import "partials/_twitter-stream.scss";
+@import "partials/_footer.scss";
