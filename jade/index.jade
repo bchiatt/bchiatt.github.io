@@ -1,0 +1,367 @@
+doctype html
+//if lt IE 7
+  html.ie.ie6(lang='en')
+//if IE 7
+  html.ie.ie7(lang='en')
+//if IE 8
+  html.ie.ie8(lang='en')
+// [if (gte IE 9)|!(IE)] <!
+html.no-js(lang='en')
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    title bchiatt | Portfolio
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(name='description', content='Parallax HTML One-Page Template for Agency and Personal')
+    meta(name='author', content='The Develovers')
+    // Styles
+    link(href='assets/css/bootstrap.css', rel='stylesheet')
+    link(href='assets/css/main.css', rel='stylesheet')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,700', rel='stylesheet', type='text/css')
+    // IE 9 Fallback
+    //if IE 9
+      link(href='assets/css/ie.css', rel='stylesheet')
+    // HTML5 shim, for IE6-8 support of HTML5 elements and IE Fallback
+    //if lt IE 9
+      script(src='assets/js/html5shiv.js')
+    // Fav and touch icons
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='assets/ico/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='assets/ico/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='assets/ico/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='assets/ico/apple-touch-icon-57-precomposed.png')
+    link(rel='shortcut icon', href='assets/ico/favicon.png')
+  body#top.fullscreen-image-background
+    // NAVBAR
+    .navbar.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#main-nav')
+            span.sr-only Menu
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html')
+            img(src='assets/img/loop-logo-white.png', alt='Loop Logo')
+            h1.hide Parallax HTML One-Page Template
+        nav#main-nav.navbar-collapse.collapse(role='navigation')
+          ul.nav.navbar-nav.navbar-right.nav-text-light
+            li.active
+              a(href='#top') TOP
+            li
+              a(href='#about') ABOUT ME
+            li
+              a(href='#services') SERVICES
+            li
+              a(href='#works') SAMPLES
+            li
+              a(href='#contact') CONTACT ME
+    // END NAVBAR
+    // HERO UNIT
+    #hero-unit.hero-unit
+      .hero-content.text-right
+        .container
+          .row
+            .col-lg-7.col-lg-offset-5
+              #slidecaption.slide-caption
+                .hero-text
+                  h2.hero-heading
+                    | MEET ME,
+                    span.name BCHIATT
+                  .looper.slide.down(data-looper='go', data-interval='3000')
+                    .looper-inner
+                      .item.animated
+                        p A WEB GENERALIST
+                      .item.animated
+                        p A MEAN-STACKER
+                      .item.animated
+                        p A COFFEE LOVER
+                      .item.animated
+                        p A BOOT WEARING
+              .hero-buttons
+                a#btn-about.btn.btn-info.btn-lg(href='#about')
+                  i.fa.fa-arrow-circle-o-down
+                  |  READ MORE
+                a#btn-contact.btn.btn-primary.btn-lg(href='#contact')
+                  i.fa.fa-phone-square
+                  |  GET IN TOUCH
+    // END HERO UNIT
+    // MAIN CONTENT
+    #main-content.main-content
+      // ABOUT
+      #about.section.about
+        .container
+          .section-heading
+            h2 ABOUT ME
+            p A great beginning to know me
+            hr
+          .section-content
+            p
+              | Progressively maintain inexpensive information without intuitive markets. Quickly reconceptualize 2.0 imperatives without next-generation meta-services. Professionally conceptualize plug-and-play metrics without orthogonal information. Appropriately strategize dynamic infrastructures and turnkey channels. Seamlessly synthesize high-quality total linkage without distinctive intellectual capital.
+            p
+              | Completely reinvent business mindshare with superior strategic theme areas. Dramatically build reliable platforms without real-time e-tailers. Competently predominate covalent scenarios rather than future-proof content. Intrinsicly innovate holistic users whereas cost effective partnerships. Objectively transform collaborative outsourcing before an expanded array of services.
+              | Monotonectally provide access to next-generation imperatives rather than mission-critical materials. Seamlessly negotiate excellent services rather than web-enabled sources. Quickly actualize proactive niches rather than user friendly catalysts for change. Efficiently negotiate distributed experiences for alternative best practices. Efficiently.
+      // END ABOUT
+      // FULL-WIDTH PARALLAX
+      #social-network.section.full-width-parallax.parallax
+        .container
+          h2 Find me elsewhere in the web
+          ul.list-inline.social-icon
+            li.wow.rollIn(data-wow-delay='0.3s')
+              a(href='#', data-toggle='tooltip', data-placement='bottom', title='Facebook')
+                i.fa.fa-facebook
+            li.wow.rollIn(data-wow-delay='0.3s')
+              a(href='#', data-toggle='tooltip', data-placement='bottom', title='Twitter')
+                i.fa.fa-twitter
+            li.wow.rollIn(data-wow-delay='0.3s')
+              a(href='#', data-toggle='tooltip', data-placement='bottom', title='Github')
+                i.fa.fa-github
+            li.wow.rollIn(data-wow-delay='0.3s')
+              a(href='#', data-toggle='tooltip', data-placement='bottom', title='LinkedIn')
+                i.fa.fa-linkedin
+      // END FULL-WIDTH PARALLAX
+      // SKILLS CHART
+      #skills.section.skills
+        .container
+          .row
+            .col-md-3.text-center
+              .chart(data-percent='92')
+                span.percent 92%
+              span.skill-name Front-End Design
+            .col-md-3.text-center
+              .chart(data-percent='80')
+                span.percent 80%
+              span.skill-name Web Design
+            .col-md-3.text-center
+              .chart(data-percent='75')
+                span.percent 75%
+              span.skill-name WordPress
+            .col-md-3.text-center
+              .chart(data-percent='65')
+                span.percent 65%
+              span.skill-name PHP
+      // END SKILLS CHART
+      // SERVICES
+      #services.section.darker.services
+        .container
+          .section-heading
+            h2 SERVICES
+            p We strive to give the best service to our clients
+            hr
+          .section-content
+            .row
+              .col-md-6
+                .service-item
+                  span.icon-checkmark2.service-icon
+                  .service-text
+                    h3 Elegant Design
+                    p
+                      | Quickly actualize proactive niches rather than user friendly catalysts for change.
+                    a.read-more(href='#')
+                      span Read more ...
+                      i.i.fa.fa-arrow-circle-right
+              .col-md-6
+                .service-item
+                  span.icon-pen.service-icon
+                  .service-text
+                    h3 Carefully Handcrafted
+                    p
+                      | Quickly actualize proactive niches rather than user friendly catalysts for change.
+                    a.read-more(href='#')
+                      span Read more ...
+                      i.i.fa.fa-arrow-circle-right
+              .col-md-6
+                .service-item
+                  span.icon-lab.service-icon
+                  .service-text
+                    h3 Design Formula
+                    p
+                      | Quickly actualize proactive niches rather than user friendly catalysts for change.
+                    a.read-more(href='#')
+                      span Read more ...
+                      i.i.fa.fa-arrow-circle-right
+              .col-md-6
+                .service-item
+                  span.icon-phone.service-icon
+                  .service-text
+                    h3 Responsive
+                    p
+                      | Quickly actualize proactive niches rather than user friendly catalysts for change.
+                    a.read-more(href='#')
+                      span Read more ...
+                      i.i.fa.fa-arrow-circle-right
+      // END SERVICES
+      // WORKS
+      #works.section.works
+        .section-heading
+          h2 WORKS
+          p The best thing is when our work become part of client success
+          hr
+        .section-content
+          ul.list-inline.work-item-filters
+            li
+              a.active(href='#', data-filter='*') ALL
+            li
+              a(href='#', data-filter='.design') DESIGN
+            li
+              a(href='#', data-filter='.photography') PHOTOGRAPHY
+            li
+              a(href='#', data-filter='.ui') UI
+            li
+              a(href='#', data-filter='.ux') UX
+            li
+              a(href='#', data-filter='.video') VIDEO
+          .work-item-wrapper
+            ul.work-item-list.list-col-4
+              li.work-item.design
+                img(src='assets/img/portfolio/work1.jpg', alt='This is the description')
+                .image-overlay
+                  a.media-popup(href='assets/img/portfolio/work1-ori.jpg', title='The Guitar')
+                    .work-item-info
+                      h3 The Guitar
+                      p Work item brief description
+                      i.fa.fa-search-plus
+              li.work-item.video
+                img(src='assets/img/portfolio/work2.jpg', alt='Just paste the link and go')
+                .image-overlay
+                  a.mfp-iframe.media-popup(href='https://www.youtube.com/watch?v=ValQcoRwDic', title='Video Title')
+                    .work-item-info
+                      h3 YouTube
+                      p Just paste the link and go
+                      i.fa.fa-search-plus
+              li.work-item.ux
+                img(src='assets/img/portfolio/work3.jpg', alt='Work item brief description')
+                .image-overlay
+                  a.media-popup(href='assets/img/portfolio/work3-ori.jpg', title='Skyscraper')
+                    .work-item-info
+                      h3 Skyscraper
+                      p Work item brief description
+                      i.fa.fa-search-plus
+              li.work-item.photography
+                img(src='assets/img/portfolio/work4.jpg', alt='Work item brief description')
+                .image-overlay
+                  a.media-popup(href='assets/img/portfolio/work4-ori.jpg', title='Heaven')
+                    .work-item-info
+                      h3 Heaven
+                      p Work item brief description
+                      i.fa.fa-search-plus
+              li.work-item.design.ux
+                img(src='assets/img/portfolio/work5.jpg', alt='Work item brief description')
+                .image-overlay
+                  a.media-popup(href='assets/img/portfolio/work5-ori.jpg', title='Raining')
+                    .work-item-info
+                      h3 Raining
+                      p Work item brief description
+                      i.fa.fa-search-plus
+              li.work-item.ui.design
+                img(src='assets/img/portfolio/work6.jpg', alt='Work item brief description')
+                .image-overlay
+                  a.media-popup(href='assets/img/portfolio/work6-ori.jpg', title='The Edge')
+                    .work-item-info
+                      h3 The Edge
+                      p Work item brief description
+                      i.fa.fa-search-plus
+              li.work-item.photography.ux
+                img(src='assets/img/portfolio/work7.jpg', alt='Work item brief description')
+                .image-overlay
+                  a.media-popup(href='assets/img/portfolio/work7-ori.jpg', title='The Light')
+                    .work-item-info
+                      h3 The Light
+                      p Work item brief description
+                      i.fa.fa-search-plus
+              li.work-item.video
+                img(src='assets/img/portfolio/work8.jpg', alt='Just paste the link and go')
+                .image-overlay
+                  a.mfp-iframe.media-popup(href='http://vimeo.com/82905738', title='Vimeo')
+                    .work-item-info
+                      h3 Vimeo
+                      p Just paste the link and go
+                      i.fa.fa-search-plus
+      // END WORKS
+      // CONTACT
+      #contact.section.contact
+        .section-heading
+          h2 GET IN TOUCH
+          p Now it&apos;s time to build a business and relationship
+          hr
+        .section-content
+          .container
+            .row
+              .col-md-4
+                .contact-info
+                  ul.list-unstyled
+                    li
+                      i.fa.fa-map-marker.pull-left
+                      h3 Address
+                      p
+                        | 12345 North Main Street
+                        br
+                        | New York, 22334455
+                    li
+                      i.fa.fa-envelope.pull-left
+                      h3 Phone
+                      p +621 234 4567
+                    li
+                      i.fa.fa-user.pull-left
+                      h3 Email
+                      p
+                        a(href='mailto:hello@yourdomain.com') hello@yourdomain.com
+              .col-md-8
+                .contact-form
+                  .alert
+                  form#contact-form(method='post', role='form', novalidate='')
+                    .row
+                      .col-md-6
+                        .form-group
+                          label.sr-only(for='name') Name:
+                          input#name.form-control(type='text', name='name', placeholder='Name*', required='')
+                      .col-md-6
+                        .form-group
+                          label.sr-only(for='email') Email:
+                          input#email.form-control(type='email', name='email', placeholder='Email*', required='')
+                    .form-group
+                      label.sr-only(for='subject') Subject:
+                      input#subject.form-control(type='text', name='subject', placeholder='Subject')
+                    .form-group
+                      label.sr-only(for='message') Message:
+                      textarea#message.form-control(name='message', placeholder='Message*', required='')
+                    button#submit-button.btn.btn-primary.btn-lg(type='submit')
+                      i.fa.loading-icon
+                      span Send Message
+                    input#msg-submitted(type='hidden', name='msg-submitted', value='true')
+      // END CONTACT
+      // TWITTER STREAM
+      #twitter-stream.section.twitter-stream
+        .container
+          .twitter-icon
+            i.fa.fa-twitter
+          #tweet
+      // TWITTER STREAM
+    // END MAIN CONTENT
+    // FOOTER
+    footer#footer.section
+      .container
+        p.copyright.pull-left &copy; 2014. The Develovers. All Rights Reserved.
+    // END FOOTER
+    .back-to-top
+      a(href='#top')
+        i.fa.fa-chevron-up
+    // JAVASCRIPT
+    script(src='assets/js/jquery-2.1.0.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/jquery.scrollTo-1.4.3.1-min.js')
+    script(src='assets/js/jquery.localscroll-1.2.7-min.js')
+    script(src='assets/js/jquery.easing.min.js')
+    script(src='assets/js/jquery.parallax-1.1.3.js')
+    script(src='assets/js/twitter-fetcher.js')
+    script(src='assets/js/imagesloaded.pkgd.js')
+    script(src='assets/js/jquery.isotope.js')
+    script(src='assets/js/wow.js')
+    script(src='assets/js/looper.js')
+    script(src='assets/js/jpreloader.js')
+    script(src='assets/js/parsley.min.js')
+    script(src='assets/js/jquery.easypiechart.min.js')
+    script(src='assets/js/waypoints.min.js')
+    script(src='assets/js/jquery.magnific-popup.min.js')
+    script(src='assets/js/loop.js')
