@@ -1,5 +1,5 @@
 jQuery( function($){
-	
+
 	/*----------------------/
 	/* PAGE LOADER
 	/*---------------------*/
@@ -13,7 +13,7 @@ jQuery( function($){
 	/*----------------------/
 	/* MAIN NAVIGATION
 	/*---------------------*/
-		
+
 	$(window).on('scroll', function(){
 		if( $(window).width() > 1024 ) {
 			if( $(document).scrollTop() > 150 ) {
@@ -22,8 +22,8 @@ jQuery( function($){
 				setNavbarTransparent();
 			}
 		}
-	});	
-	
+	});
+
 	function toggleNavbar() {
 		if( ($(window).width() > 1024) && ($(document).scrollTop() <= 150) ) {
 			setNavbarTransparent();
@@ -35,25 +35,25 @@ jQuery( function($){
 	toggleNavbar();
 
 	$(window).resize( function() {
-		toggleNavbar();	
+		toggleNavbar();
 	});
 
 	/* navbar setting functions */
 	function setNavbarLight() {
 		$('.navbar').addClass('navbar-light');
-		$('.navbar-brand img').attr('src', 'assets/img/loop-logo.png');
+		$('.navbar-brand img').attr('src', 'assets/img/logo-bch.png');
 	}
 
 	function setNavbarTransparent() {
 		$('.navbar').removeClass('navbar-light');
-		$('.navbar-brand img').attr('src', 'assets/img/loop-logo-white.png');
+		$('.navbar-brand img').attr('src', 'assets/img/logo-bch-white.png');
 	}
 
 	// hide collapsible menu
 	$('.navbar-nav li a').click( function() {
 		if($(this).parents('.navbar-collapse.collapse').hasClass('in')) {
 			$('#main-nav').collapse('hide');
-		}		
+		}
 	});
 
 	$('#main-nav').localScroll({
@@ -73,29 +73,29 @@ jQuery( function($){
 
 	if( $('.slideshow').length > 0 ) {
 		$.supersized({
-				
-			// Functionality		
+
+			// Functionality
 			autoplay: 1,				// Slideshow starts playing automatically
 			slide_interval: 3000,		// Length between transitions
 			transition: 1, 				// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-			transition_speed: 1000,		// Speed of transition				
-													   										   
-			// Components							
+			transition_speed: 1000,		// Speed of transition
+
+			// Components
 			slide_links: 'blank',		// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 			thumb_links: 0,				// Individual thumb links for each slide
 			slides:  	[				// Slideshow Images
 							{image : 'assets/img/sliders/slider1.jpg', title : '<div class="hero-text"><h2 class="hero-heading">HANDCRAFTED</h2><p>Built to provide great visitor experience</p></div>', thumb : '', url : ''},
 							{image : 'assets/img/sliders/slider2.jpg', title : '<div class="hero-text"><h2 class="hero-heading">PARALLAX</h2><p>Scrolling the page is fun with parallax background</p></div>', thumb : '', url : ''},
-							{image : 'assets/img/sliders/slider3.jpg', title : '<div class="hero-text"><h2 class="hero-heading">BUY ONE FOR TWO</h2><p>Buy one to get both of the agency and personal theme</p></div>', thumb : '', url : ''}  
+							{image : 'assets/img/sliders/slider3.jpg', title : '<div class="hero-text"><h2 class="hero-heading">BUY ONE FOR TWO</h2><p>Buy one to get both of the agency and personal theme</p></div>', thumb : '', url : ''}
 						],
 		});
 
 		$(".fa-pause, .fa-play").click( function(){
 			$(this).toggleClass("fa-pause fa-play");
-		});	
+		});
 	}
 
-	
+
 	/*-----------------------------/
 	/* HERO UNIT FULLSCREEN VIDEO
 	/*---------------------------*/
@@ -159,7 +159,7 @@ jQuery( function($){
 	$(window).resize( function() {
 		setParallax();
 	});
-	
+
 	/*----------------------/
 	/* SKILLS
 	/*---------------------*/
@@ -174,14 +174,14 @@ jQuery( function($){
 				lineWidth: 2,
 				easing: 'easeOutExpo',
 				animate: 2000
-			});		
+			});
 		});
 	},
 	{
 		offset: '70%'
 	});
 
-	
+
 
 	/*----------------------/
 	/* TWITTER STREAM
@@ -202,7 +202,7 @@ jQuery( function($){
 	/**
 	* How to use fetch function:
 	* @param {string} Your Twitter widget ID.
-	* @param {string} The ID of the DOM element you want to write results to. 
+	* @param {string} The ID of the DOM element you want to write results to.
 	* @param {int} Optional - the maximum number of tweets you want returned. Must
 	*     be a number between 1 and 20.
 	* @param {boolean} Optional - set true if you want urls and hashtags to be hyperlinked!
@@ -239,22 +239,22 @@ jQuery( function($){
 			$('body, html').animate({
 				scrollTop: 0
 			}, 800, 'easeInOutExpo');
-		});	
+		});
 	}
-	
+
 
 	/*----------------------/
 	/* WORKS
 	/*---------------------*/
 
 	var $container = $('.work-item-list');
-	
+
 	new imagesLoaded( $container, function() {
 		$container.isotope({
 			itemSelector: '.work-item'
 		});
 	});
-	
+
 	$(window).smartresize( function() {
 		$container.isotope('reLayout');
 	});
@@ -264,7 +264,7 @@ jQuery( function($){
 		var selector = $(this).attr('data-filter');
 		$container.isotope({
 			filter: selector
-		});		
+		});
 
 		$('.work-item-filters a').removeClass('active');
 		$(this).addClass('active');
@@ -284,14 +284,14 @@ jQuery( function($){
 				originalTitle = currentItem.title;
 				currentItem.title = '<h3>' + originalTitle + '</h3>' + '<p>' + $(currentItem).parents('.work-item').find('img').attr('alt') + '</p>';
 
-				// adding animation				
-				this.st.mainClass = 'mfp-fade'; 
+				// adding animation
+				this.st.mainClass = 'mfp-fade';
 			},
 			close: function() {
-				currentItem.title = originalTitle; 
+				currentItem.title = originalTitle;
 			}
 		}
-		
+
 	});
 
 
@@ -309,7 +309,7 @@ jQuery( function($){
 		$('.wow').attr('class', '');
 	}
 
-	
+
 	/*----------------------/
 	/* TOOLTIP
 	/*---------------------*/
@@ -320,8 +320,8 @@ jQuery( function($){
 			container: "body"
 		});
 	}
-	
-	
+
+
 	/*----------------------/
 	/* AJAX CONTACT FORM
 	/*---------------------*/
@@ -329,7 +329,7 @@ jQuery( function($){
 	$('#contact-form').parsley();
 
 	$('.contact-form form').submit( function(e) {
-		
+
 		e.preventDefault();
 
 		if( !$(this).parsley('isValid') )
@@ -344,16 +344,16 @@ jQuery( function($){
 		$btn.prop('disabled', true).find('span').text("Sending...");
 
 		$.post('contact.php', $(this).serialize(), function(data){
-			
+
 			$message = data.message;
-			
+
 			if( data.result == true ){
 				$theForm.slideUp('medium', function() {
 					$alert.removeClass('alert-danger');
 					$alert.addClass('alert-success').html($message).slideDown('medium');
 				});
 			}else {
-				$alert.addClass('alert-danger').html($message).slideDown('medium');	
+				$alert.addClass('alert-danger').html($message).slideDown('medium');
 			}
 
 			$btn.find('.loading-icon').removeClass('fa-spinner fa-spin ');
