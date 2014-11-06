@@ -272,7 +272,7 @@ jQuery( function($){
 		return false;
 	});
 
-	var originalTitle, currentItem;
+	var originalTitle, currentItem, githubURL, hostURL;
 
 	$('.media-popup').magnificPopup({
 		type: 'image',
@@ -282,7 +282,9 @@ jQuery( function($){
 				// modify item title to include description
 				currentItem = $(this.items)[this.index];
 				originalTitle = currentItem.title;
-				currentItem.title = '<h3>' + originalTitle + '</h3>' + '<p>' + $(currentItem).parents('.work-item').find('img').attr('alt') + '</p>';
+				githubURL = $(currentItem).attr('data-repo');
+				hostURL = $(currentItem).attr('data-host');
+				currentItem.title = '<h3><a href=' + hostURL + ' target=\'_blank\'>' + 'View ' + originalTitle + '</a></h3>' + '<p><i class="fa fa-github"></i><a href=' + githubURL + ' target=\'_blank\'>' + ' view the repo' + '</a></p>';
 
 				// adding animation
 				this.st.mainClass = 'mfp-fade';
