@@ -13,7 +13,7 @@ body {
   line-height: 1.6;
 }
 body.fullscreen-image-background {
-  background-image: url('../img/sliders/profile1-cropped.png?1394417052');
+  background-image: url('../img/sliders/profile1-cropped.jpg?1394417052');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -7452,7 +7452,7 @@ img.mfp-img {
 /* SOCIAL NETWORK
 /* --------------------- */
 #social-network {
-  background-image: url('../img/coffee-cropped.png?1394021998');
+  background-image: url('../img/coffee-cropped.jpg?1394021998');
   text-align: center;
 }
 #social-network h2 {
