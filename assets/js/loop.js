@@ -284,7 +284,7 @@ jQuery( function($){
 				originalTitle = currentItem.title;
 				githubURL = $(currentItem).attr('data-repo');
 				hostURL = $(currentItem).attr('data-host');
-				currentItem.title = '<h3><a href=' + hostURL + ' target=\'_blank\'>' + 'View ' + originalTitle + '</a></h3>' + '<p><i class="fa fa-github"></i><a href=' + githubURL + ' target=\'_blank\'>' + ' view the repo' + '</a></p>';
+				currentItem.title = '<h1><a href=' + hostURL + ' target=\'_blank\' color=\'white\'> Experience ' + originalTitle + '</a></h1>' + '<h3><i class="fa fa-github"></i><a href=' + githubURL + ' target=\'_blank\'> &nbsp; visit the repo </a></h3>';
 
 				// adding animation
 				this.st.mainClass = 'mfp-fade';
