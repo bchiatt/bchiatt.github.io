@@ -20,7 +20,7 @@ body.fullscreen-image-background {
 }
 @media screen and (min-width: 1025px) {
   body.fullscreen-image-background {
-    background-attachment: fixed;
+   background-attachment: fixed;
   }
 }
 
@@ -7803,10 +7803,10 @@ img.mfp-img {
   height: 100%;
 }
 @media screen and (max-width: 1024px) {
-  .work-item-list .image-overlay a:not(.mfp-iframe) {
+  /*.work-item-list .image-overlay a:not(.mfp-iframe) {
     pointer-events: none;
     cursor: default;
-  }
+  }*/
 }
 .work-item-list .work-item-info {
   position: absolute;
