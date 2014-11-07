@@ -330,7 +330,7 @@
 
   $.Isotope.settings = {
     resizable: true,
-    layoutMode : 'masonry',
+    layoutMode : 'cellsByRow',
     containerClass : 'isotope',
     itemClass : 'isotope-item',
     hiddenClass : 'isotope-hidden',

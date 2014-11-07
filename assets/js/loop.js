@@ -168,7 +168,7 @@ jQuery( function($){
 		$('.chart').each( function() {
 			$(this).easyPieChart({
 				size: 150,
-				barColor: '#ffae3f',
+				barColor: '#039BE5',
 				trackColor: '#eee',
 				scaleColor: false,
 				lineWidth: 2,
