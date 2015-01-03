@@ -6,32 +6,58 @@
     hr
   .section-content
     .container
-      .row
-        .col-md-4
-          .contact-info
-            ul.list-unstyled
-              li
-                i.fa.fa-envelope-o.pull-left
-                h3 Email
-                p
-                  a(href='mailto:bchiatt@outlook.com') bchiatt at outlook dot com
-        .col-md-4
-          .contact-info
-            ul.list-unstyled
-              li
-                i.fa.fa-map-marker.pull-left
-                h3 Address
-                p
-                  | Just South of Downtown
-                  br
-                  | Nashville, TN, U.S.A
-        .col-md-4
-          .contact-info
-            ul.list-unstyled
-              li
-                i.fa.fa-paperclip.pull-left
-                h3 Resume
-                p
-                  a(href='BrianHiattResume.pdf') Click to download my resume.
+      .col-md-4
+        .row
+          .col-md-12
+            .contact-info
+              ul.list-unstyled
+                li
+                  i.fa.fa-envelope-o.pull-left
+                  h3 Email
+                  p
+                    a(href='mailto:bchiatt@outlook.com') bchiatt at outlook dot com
+        .row
+          .col-md-12
+            .contact-info
+              ul.list-unstyled
+                li
+                  i.fa.fa-map-marker.pull-left
+                  h3 Address
+                  p
+                    | Just South of Downtown
+                    br
+                    | Nashville, TN, U.S.A
+        .row
+          .col-md-12
+             .contact-info
+               ul.list-unstyled
+                 li
+                   i.fa.fa-paperclip.pull-left
+                   h3 Resume
+                   p
+                     a(href='BrianHiattResume.pdf') Click to download my resume.
+      .col-md-8
+        .contact-form
+          .alert
+          form#contact-form(method='post', role='form', novalidate='')
+            .row
+              .col-md-6
+                .form-group
+                  label.sr-only(for='name') Name:
+                  input#name.form-control(type='text', name='name', placeholder='Name*', required='')
+              .col-md-6
+                .form-group
+                  label.sr-only(for='email') Email:
+                  input#email.form-control(type='email', name='email', placeholder='Email*', required='')
+            .form-group
+              label.sr-only(for='subject') Subject:
+              input#subject.form-control(type='text', name='subject', placeholder='Subject')
+            .form-group
+              label.sr-only(for='message') Message:
+              textarea#message.form-control(name='message', placeholder='Message*', required='')
+            button#submit-button.btn.btn-primary.btn-lg(type='submit')
+              i.fa.loading-icon
+              span Send Message
+            input#msg-submitted(type='hidden', name='msg-submitted', value='true')
 
 // END CONTACT
