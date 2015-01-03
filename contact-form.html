@@ -1,0 +1,32 @@
+
+<div class="col-md-8">
+  <div class="contact-form">
+    <div class="alert"></div>
+    <form id="contact-form" method="post" role="form" novalidate="">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="name" class="sr-only">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Name*" required="" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="email" class="sr-only">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Email*" required="" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="subject" class="sr-only">Subject:</label>
+        <input id="subject" type="text" name="subject" placeholder="Subject" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="message" class="sr-only">Message:</label>
+        <textarea id="message" name="message" placeholder="Message*" required="" class="form-control"></textarea>
+      </div>
+      <button id="submit-button" type="submit" class="btn btn-primary btn-lg"><i class="fa loading-icon"></i><span>Send Message</span></button>
+      <input id="msg-submitted" type="hidden" name="msg-submitted" value="true">
+    </form>
+  </div>
+</div>

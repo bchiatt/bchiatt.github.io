@@ -14,7 +14,7 @@ var jscs      = require('gulp-jscs');
 
 var paths = {
   //sass: ['./sass/main.scss'],
-  jade: ['./jade/index.jade'],
+  jade: ['./jade/**/*.jade'],
   code: ['./public/js/**/*.js']
 };
 
